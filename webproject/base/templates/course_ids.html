@@ -1,0 +1,10 @@
+
+<form method='GET'>
+    <input type="text" name="id" placeholder="enter course id">
+    <button type='submit'>search</button>
+</form>
+<ul>
+{% for course in course %}
+<li>{{course.cid}} - {{course.name}} - {{course.teacher}}</li>
+{%endfor%}
+</ul>

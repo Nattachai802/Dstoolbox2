@@ -1,0 +1,7 @@
+<h1>List<h1>
+
+{% for i in course %}
+<p>{{i.cid}} {{i.name}} {{i.teacher}}</p>
+<a href={% url 'FunctionD' pk=i.cid %}>{{i.cid}}</a>
+<a href={% url 'FunctionE' pk=i.cid %}>{{i.cid}}</a>
+{% endfor %}

@@ -1,0 +1,9 @@
+
+<form method='Get' action="{% url 'FunctionC' %}" >
+    <input type='text',name='name'></input>
+    <button type="submit">Search</button>
+</form>
+
+{% for course in Course %}
+    <p>{{course.cid}} - {{course.name}} - {{course.teacher}}</p>
+{%endfor%}
